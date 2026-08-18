@@ -76,6 +76,12 @@ docker ps
 
 Lists all running containers in your system.
 
+```
+docker rmi <image_name>
+```
+
+Removes an image from your system, you must makes sure there are no running containers using this image
+
 ## 7. Container Lifecycle
 
 The `docker run` command is actually a **compound command** consisting of:
