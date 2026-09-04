@@ -82,6 +82,24 @@ docker rmi <image_name>
 
 Removes an image from your system, you must makes sure there are no running containers using this image
 
+```
+docker attach [options] <container_id>
+```
+
+The docker attach command connects your terminal's local standard input, output, and error streams (stdin, stdout, stderr) to a running container's primary process (PID 1). This allows you to view its ongoing output or interact with it directly in real
+
+```
+docker inspect <container_name>
+```
+
+Returns detailed info about the container in json format
+
+```
+docker run -e <env_var>=<val> <container_name>
+```
+
+Runs the docker container with the env variable set to given value
+
 ## 7. Container Lifecycle
 
 The `docker run` command is actually a **compound command** consisting of:
